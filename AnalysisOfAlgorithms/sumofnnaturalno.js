@@ -18,3 +18,9 @@ for(let i=1; i<=n; i++) {
 }
 
 console.log(sum);
+
+
+// method 3: using formula
+const n1 = 6;
+const sumUsingFormula = (n1 * (n1 + 1)) / 2;
+console.log(sumUsingFormula);
