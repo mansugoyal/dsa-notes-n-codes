@@ -2,6 +2,8 @@
  * @param {character[]} s
  * @return {void} Do not return anything, modify s in-place instead.
  */
+
+//using two pointer technique
 var reverseString = function(s) {
 	let right = s.length - 1;
 	let left = 0;
@@ -16,6 +18,8 @@ var reverseString = function(s) {
 const ar = ["h","e","l","l","o"];
 reverseString(ar);
 
+
+//usign reverse technique
 var reverseString = function(s) {
 	function helper(left, right) {
     	if (left >= right) return;
