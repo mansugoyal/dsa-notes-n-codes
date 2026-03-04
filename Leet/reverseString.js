@@ -1,8 +1,3 @@
-/**
- * @param {character[]} s
- * @return {void} Do not return anything, modify s in-place instead.
- */
-
 //using two pointer technique
 let reverseString = function(s) {
 	let right = s.length - 1;
@@ -33,3 +28,11 @@ let reverseStr = function(s) {
 };
 const s = ["h","e","l","l","o"];
 reverseStr(s);
+
+// using built in functions
+let result = str
+  .split(" ")
+  .map(word => word.split("").reverse().join(""))
+  .join(" ");
+
+console.log(result);
