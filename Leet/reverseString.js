@@ -4,11 +4,13 @@
  */
 
 //using two pointer technique
-var reverseString = function(s) {
+let reverseString = function(s) {
 	let right = s.length - 1;
 	let left = 0;
 
 	while (left < right) {
+        console.log([s[left], s[right]]);
+        console.log([s[right], s[left]]);
     	[s[left], s[right]] = [s[right], s[left]];
     	left++;
     	right--;
@@ -19,8 +21,8 @@ const ar = ["h","e","l","l","o"];
 reverseString(ar);
 
 
-//usign reverse technique
-var reverseString = function(s) {
+//using reverse technique
+let reverseStr = function(s) {
 	function helper(left, right) {
     	if (left >= right) return;
     	[s[left], s[right]] = [s[right], s[left]];
@@ -30,4 +32,4 @@ var reverseString = function(s) {
 	console.log(s);
 };
 const s = ["h","e","l","l","o"];
-reverseString(s);
+reverseStr(s);
