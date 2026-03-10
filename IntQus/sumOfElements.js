@@ -1,16 +1,21 @@
 // Given an array of integers, find the sum of its elements.
 let numbers = [1, 2, 3, 4, 10, 11];
 let sum = 0;
+
+console.time("for-loop");
 for(let j=0; j<=numbers.length-1; j++){
     sum += numbers[j];
 }
+console.timeEnd("for-loop");
 console.log(sum);
 
 // Another way to do it
 let sumNew = 0;
+// console.time("for-of-loop");
 for (let num of numbers) {
     sumNew += num;
 }
+// console.timeEnd("for-of-loop");
 console.log("sumNew", sumNew);
 
 // Another way to do it
