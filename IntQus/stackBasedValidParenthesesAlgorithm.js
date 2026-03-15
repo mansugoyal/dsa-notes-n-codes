@@ -1,9 +1,8 @@
-// Write a function that determines whether a given sequence of brackets is valid.
-// A sequence is valid if:
-// Every opening bracket has a corresponding closing bracket.
-// Brackets close in the correct order.
-// Allowed brackets are: (), [], {}. Return true if the sequence is valid, otherwise return false.
-
+/*
+Write a function that determines whether a given sequence of brackets is valid. A sequence is valid if:
+Every opening bracket has a corresponding closing bracket. Brackets close in the correct order.
+Allowed brackets are: (), [], {}. Return true if the sequence is valid, otherwise return false.
+*/
 
 // Correct Stack Logic (Industry Approach)
 function isValidBrackets(ar) {
